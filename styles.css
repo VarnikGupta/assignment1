@@ -17,6 +17,7 @@
   --dark-grayish-blue: hsl(232, 10%, 55%);
   --very-dark-grayish-blue: hsl(213, 9%, 39%);
   --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  
 
   --header-font: 'Fraunces', serif;
   --body-font: 'Barlow', sans-serif;
@@ -26,6 +27,10 @@ body {
   margin: 0;
   padding: 0;
   background-color: #3ebfff;
+}
+
+.headers{
+  font-family: var(--header-font);
 }
 
 nav {
@@ -127,7 +132,7 @@ ul li a:hover {
 .main-rows {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  background-color: var(--floral-white);
+  background-color: #fffbf8;
 }
 
 .articles {
@@ -211,7 +216,7 @@ ul li a:hover {
   justify-content: flex-end;
   row-gap: .5rem;
   text-align: center;
-  padding-bottom: 1rem;
+  /* padding-bottom: 2rem; */
 }
 
 
@@ -223,6 +228,58 @@ ul li a:hover {
   color: var(--photography-color);
 }
 
+/* testimonials section */
+.testimonials-section{
+  padding: 5rem 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  row-gap: 2rem;
+  font-family: var(--body-font);
+  background-color: #fffbf8;
+}
+
+.testimonials-header {
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.2rem;
+  color: var(--grayish-blue);
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 20%));
+  justify-content: space-evenly;
+  row-gap: 3rem;
+  column-gap: .5rem;
+}
+
+.testimonial-grid-items {
+  display: grid;
+  justify-items: center;
+  gap: 1.5rem;
+  text-align: center;
+}
+
+.client-identity {
+  margin-top: .5rem;
+  display: grid;
+  row-gap: .5rem
+}
+
+.client-imgs {
+  border-radius: 50%;
+  width: 8rem;
+}
+
+.client-names {
+  font-family: var(--header-font);
+  font-weight: bold;
+}
+
+.client-position {
+  color: var(--grayish-blue);
+}
 
 /* responsive */
 @media (max-width: 768px) {

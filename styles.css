@@ -9,7 +9,7 @@
   --learn-more-yellow: hsla(51, 100%, 49%, 0.3);
   --soft-red: hsl(7, 99%, 70%);
   --learn-more-soft-red: hsla(7, 99%, 70%, 0.3);
-  --footer-bg-color: hsla(168, 60%, 45%, 0.493);
+  --footer-bg-color: #90d4c5;
   --footer-color: hsl(168, 34%, 41%);
   --graphics-design-color: hsl(167, 40%, 24%);
   --photography-color: hwb(198 10% 58%);
@@ -281,6 +281,60 @@ ul li a:hover {
   color: var(--grayish-blue);
 }
 
+/* grid section */
+.grid-images {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid-item {
+  width: 100%;
+  height: clamp(10rem, 30vmax, 20rem);
+}
+
+/* footer section */
+.footer {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: clamp(10rem, 35vh, 15rem);
+  background: var(--footer-bg-color);
+  color: var(--footer-color);
+  font-family: var(--body-font);
+}
+
+.footer-header {
+  font-weight: 900;
+  font-size: 2rem;
+}
+
+.footer-links-container, .social-media-container {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+.footer-links {
+  font-weight: 600;
+  color: var(--footer-color);
+  transition: .2s ease-in-out;
+  text-decoration: none;
+}
+
+.footer-links:hover {
+  color: var(--white);
+  transition: .2s ease-in-out;
+  cursor: pointer;
+}
+
+.social-media-icons:hover {
+  /* filter: brightness(0) invert(100%); */
+  cursor: pointer;
+  transition: .1s ease-in-out;
+}
+
 /* responsive */
 @media (max-width: 768px) {
   .checkbtn {
@@ -350,5 +404,9 @@ ul li a:hover {
 
   .grid-imgs {
     grid-row: 1 / 2;
+  }
+
+  .grid-images {
+    grid-template-columns: repeat(2, 50%);
   }
 }

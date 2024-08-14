@@ -156,6 +156,7 @@ ul li a:hover {
   font-weight: 510;
   color: var(--dark-grayish-blue);
   font-size: .9rem;
+  margin-bottom: 13px;
 }
 
 .learn-more-link {
@@ -196,7 +197,7 @@ ul li a:hover {
 }
 
 .articles,.grid-imgs {
-  height: clamp(18rem, 35vmax, 27rem);
+  height: clamp(22rem, 35vmax, 27rem);
 }
 
 .exhibition {
@@ -214,7 +215,7 @@ ul li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  row-gap: .5rem;
+  row-gap: .9rem;
   text-align: center;
   /* padding-bottom: 2rem; */
 }
@@ -268,8 +269,9 @@ ul li a:hover {
 }
 
 .client-imgs {
-  border-radius: 50%;
-  width: 8rem;
+  border-radius: 100%;
+  width: 6rem;
+  height: 6rem;
 }
 
 .client-names {
